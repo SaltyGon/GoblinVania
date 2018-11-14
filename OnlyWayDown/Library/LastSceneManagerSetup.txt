@@ -1,0 +1,4 @@
+sceneSetups:
+- path: Assets/Project/Scenes/Platf_test 1.unity
+  isLoaded: 1
+  isActive: 1

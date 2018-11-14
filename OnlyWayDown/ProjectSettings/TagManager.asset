@@ -1,0 +1,60 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - Bomb
+  - NoHook
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - 
+  - 
+  - Knockable
+  - Hook
+  - Player
+  - Traps
+  - Ground
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: Back
+    uniqueID: 2617448291
+    locked: 0
+  - name: Player
+    uniqueID: 2456396763
+    locked: 0
+  - name: Danger
+    uniqueID: 3518101049
+    locked: 0
+  - name: Main
+    uniqueID: 1799847017
+    locked: 0
+  - name: Top
+    uniqueID: 4172954421
+    locked: 0
