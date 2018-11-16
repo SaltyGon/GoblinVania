@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Bomb
   - NoHook
+  - Enemy
   layers:
   - Default
   - TransparentFX
@@ -57,4 +58,7 @@ TagManager:
     locked: 0
   - name: Top
     uniqueID: 4172954421
+    locked: 0
+  - name: Enemy
+    uniqueID: 310639415
     locked: 0

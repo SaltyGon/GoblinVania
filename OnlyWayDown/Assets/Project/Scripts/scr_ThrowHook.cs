@@ -15,6 +15,8 @@ public class scr_ThrowHook : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        myPlayer = GetComponent<scr_CubeControl>().MyPlayer;
+
         if (Input.GetButtonDown(myPlayer + "Hook"))
         {
             if (cur_Hook == null)

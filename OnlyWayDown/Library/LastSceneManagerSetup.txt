@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Project/Scenes/Platf_test 1.unity
+- path: Assets/Project/Scenes/Platf_test 2.unity
   isLoaded: 1
   isActive: 1

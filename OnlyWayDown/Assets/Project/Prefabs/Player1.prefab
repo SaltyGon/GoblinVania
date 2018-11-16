@@ -446,7 +446,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 12.5
+  m_GravityScale: 8
   m_Material: {fileID: 0}
   m_Interpolate: 1
   m_SleepingMode: 1
@@ -798,14 +798,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4400b8ef3fb2ec347aaea01e1a181a89, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Speed: 10
-  m_MaxFallSpeed: 20
+  m_Speed: 7
+  m_MaxFallSpeed: 12
   m_MaxGlideSpeed: 3
   m_JumpForce: 1300
-  m_GravityUp: 15
-  m_GravityStop: 20
-  m_GravityDown: 12.5
-  m_GravityWall: 0.5
+  m_GravityUp: 10
+  m_GravityStop: 22
+  m_GravityDown: 8
+  m_GravityWall: 0.2
   m_WallJumpFactor: 0.8
   m_KnockTime: 0.25
   m_PushTime: 0.15
@@ -819,7 +819,7 @@ MonoBehaviour:
   m_Jumped: 0
   m_Knocked: 0
   m_CanUnknocked: 1
-  m_CanHook: 0
+  m_CanHook: 1
   m_WhatIsGround:
     serializedVersion: 2
     m_Bits: 4096
@@ -836,6 +836,7 @@ MonoBehaviour:
   - {fileID: 21300008, guid: 54382825aa91fbf4eaaf35c4faaaaa97, type: 3}
   HPbar: {fileID: 0}
   endScreen: {fileID: 0}
+  MyPlayer: 
   vemando: 1
   a_Jump: {fileID: 82806965960619500}
   a_Knocked: {fileID: 82599124147387504}
@@ -14746,7 +14747,7 @@ SpriteRenderer:
   m_SortingLayerID: -1838570533
   m_SortingLayer: 2
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: a5e527cc1eaaaf7499f8ce4260a9c010, type: 3}
+  m_Sprite: {fileID: 21300000, guid: db57d9180cc8843419d0ce0de8e5369a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

@@ -56,7 +56,7 @@ public class scr_CubeControl : MonoBehaviour {
 
     private Vector3 SpawnPoint;
 
-    private string MyPlayer;
+    public string MyPlayer;
     private string controller = "P1";
     private string mouse = "P2";
 
@@ -119,7 +119,7 @@ public class scr_CubeControl : MonoBehaviour {
             part_Trail.Play();
         }
 
-        this.gameObject.GetComponent<scr_ThrowHook>().myPlayer = MyPlayer;
+        //this.gameObject.GetComponent<scr_ThrowHook>().myPlayer = MyPlayer;
         if (vemando)
         {
             MyPlayer = controller;

@@ -59215,35 +59215,6 @@ Prefab:
       propertyPath: target
       value: 
       objectReference: {fileID: 2029903926}
-    - target: {fileID: 114256052589818910, guid: 7efa7d441e30ae045b30400c404cd83f,
-        type: 2}
-      propertyPath: m_RefResolutionX
-      value: 1024
-      objectReference: {fileID: 0}
-    - target: {fileID: 114256052589818910, guid: 7efa7d441e30ae045b30400c404cd83f,
-        type: 2}
-      propertyPath: m_RefResolutionY
-      value: 1024
-      objectReference: {fileID: 0}
-    - target: {fileID: 114256052589818910, guid: 7efa7d441e30ae045b30400c404cd83f,
-        type: 2}
-      propertyPath: m_AssetsPPU
-      value: 96
-      objectReference: {fileID: 0}
-    - target: {fileID: 114256052589818910, guid: 7efa7d441e30ae045b30400c404cd83f,
-        type: 2}
-      propertyPath: m_UpscaleRT
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114256052589818910, guid: 7efa7d441e30ae045b30400c404cd83f,
-        type: 2}
-      propertyPath: m_PixelSnapping
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1069598654262668, guid: 7efa7d441e30ae045b30400c404cd83f, type: 2}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7efa7d441e30ae045b30400c404cd83f, type: 2}
   m_IsPrefabAsset: 0
@@ -61955,16 +61926,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 2
       objectReference: {fileID: 0}
-    - target: {fileID: 199563985451605678, guid: 5f7bd144326fe85418d27c1cf1d70622,
-        type: 2}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: cc55cf780a678b54cbe3c5a322c93cbd, type: 2}
-    - target: {fileID: 199563985451605678, guid: 5f7bd144326fe85418d27c1cf1d70622,
-        type: 2}
-      propertyPath: m_Materials.Array.data[1]
-      value: 
-      objectReference: {fileID: 2100000, guid: cc55cf780a678b54cbe3c5a322c93cbd, type: 2}
     - target: {fileID: 114032953889507066, guid: 5f7bd144326fe85418d27c1cf1d70622,
         type: 2}
       propertyPath: HPbar
@@ -61975,6 +61936,16 @@ Prefab:
       propertyPath: endScreen
       value: 
       objectReference: {fileID: 259977080}
+    - target: {fileID: 199563985451605678, guid: 5f7bd144326fe85418d27c1cf1d70622,
+        type: 2}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: cc55cf780a678b54cbe3c5a322c93cbd, type: 2}
+    - target: {fileID: 199563985451605678, guid: 5f7bd144326fe85418d27c1cf1d70622,
+        type: 2}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: cc55cf780a678b54cbe3c5a322c93cbd, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5f7bd144326fe85418d27c1cf1d70622, type: 2}
   m_IsPrefabAsset: 0
@@ -62934,7 +62905,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1756188529}
   - component: {fileID: 1756188528}
-  - component: {fileID: 1756188527}
   m_Layer: 5
   m_Name: Camera
   m_TagString: Untagged
@@ -62942,13 +62912,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!81 &1756188527
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1756188526}
-  m_Enabled: 1
 --- !u!20 &1756188528
 Camera:
   m_ObjectHideFlags: 0
