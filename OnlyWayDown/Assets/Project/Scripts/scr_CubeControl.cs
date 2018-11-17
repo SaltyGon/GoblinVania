@@ -140,7 +140,6 @@ public class scr_CubeControl : MonoBehaviour {
 
     private void FixedUpdate()
     {
-        Debug.Log(m_CanHook);
 
         if (Input.GetAxisRaw(MyPlayer + "Horizontal") != 0 && m_CanUnknocked /*&& m_Grounded*/)
         {
