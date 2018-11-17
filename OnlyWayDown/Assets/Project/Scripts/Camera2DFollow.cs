@@ -10,11 +10,15 @@ namespace UnityStandardAssets._2D
         public float lookAheadFactor = 3;
         public float lookAheadReturnSpeed = 0.5f;
         public float lookAheadMoveThreshold = 0.1f;
+        public float lookAheadSwingThreshold = 0.1f;
+        public float currentThreshold;
 
         private float m_OffsetZ;
         private Vector3 m_LastTargetPosition;
         private Vector3 m_CurrentVelocity;
         private Vector3 m_LookAheadPos;
+
+        public bool useMove;
 
         private void Start()
         {
@@ -26,10 +30,20 @@ namespace UnityStandardAssets._2D
 
         private void Update()
         {
+            useMove = GameObject.Find("Player1").GetComponent<scr_CubeControl>().m_UseMove;
+            if (useMove)
+            {
+                currentThreshold = lookAheadMoveThreshold;
+            }
+            else if (!useMove)
+            {
+                currentThreshold = lookAheadSwingThreshold;
+            }
+
             // only update lookahead pos if accelerating or changed direction
             float xMoveDelta = (target.position - m_LastTargetPosition).x;
 
-            bool updateLookAheadTarget = Mathf.Abs(xMoveDelta) > lookAheadMoveThreshold;
+            bool updateLookAheadTarget = Mathf.Abs(xMoveDelta) > currentThreshold;
 
             if (updateLookAheadTarget)
             {

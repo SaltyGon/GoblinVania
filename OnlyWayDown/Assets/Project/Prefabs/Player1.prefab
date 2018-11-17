@@ -856,6 +856,7 @@ MonoBehaviour:
   lookAheadFactor: 6
   lookAheadReturnSpeed: 0.35
   lookAheadMoveThreshold: 0.1
+  lookAheadSwingThreshold: 0.1
 --- !u!114 &114654803617944280
 MonoBehaviour:
   m_ObjectHideFlags: 1

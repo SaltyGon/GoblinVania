@@ -19,6 +19,7 @@ public class scr_CubeControl : MonoBehaviour {
     [SerializeField] private float m_GravityDown = 10f;
     [SerializeField] private float m_GravityWall = 10f;
     [SerializeField] private float m_WallJumpFactor = 0.8f;
+    [SerializeField] private float m_SwingJumpFactor = 0.8f;
     [SerializeField] private float m_KnockTime = 0.25f;
     [SerializeField] private float m_PushTime = 0.1f;
     [SerializeField] private float m_SwingForce = 10f;
@@ -288,14 +289,14 @@ public class scr_CubeControl : MonoBehaviour {
 
             if (jump)
             {
-                JumpAsisst(0, m_JumpForce);
                 GetComponent<scr_ThrowHook>().UnHook();
+                GetPushed(new Vector3(Input.GetAxisRaw(MyPlayer + "Horizontal"), 1, 0), m_JumpForce * m_SwingJumpFactor);
             }
 
-            if (Input.GetAxisRaw(MyPlayer + "Horizontal") > 0 && !m_FacingRight)
+            /*if (Input.GetAxisRaw(MyPlayer + "Horizontal") > 0 && !m_FacingRight)
                 Flip();
             else if (Input.GetAxisRaw(MyPlayer + "Horizontal") < 0 && m_FacingRight)
-                Flip();
+                Flip();*/
         }
     }
 

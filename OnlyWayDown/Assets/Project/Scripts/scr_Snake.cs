@@ -4,6 +4,7 @@ using System.Collections;
 public class scr_Snake : MonoBehaviour
 {
     public float speed = 10;
+    public float deathTime = 3;
 
     private Transform snakeCheck;
     private Transform groundCheck;
@@ -15,27 +16,30 @@ public class scr_Snake : MonoBehaviour
     public float bounceStrength = 1000f;
     public float knockStrength = 1000f;
     public Vector2 BounceDir;
-    private bool triggered = false;
+    private bool stunned = false;
 
     private void Awake()
     {
+        this.gameObject.GetComponent<SpriteRenderer>().color = new Color(1, 1, 1, 1);
         snakeCheck = transform.Find("SnakeCheck");
         groundCheck = transform.Find("GroundCheck");
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.tag == "Player")
+        if (collision.gameObject.tag == "Player" && !stunned)
         {
-            triggered = true;
+            stunned = true;
             collision.gameObject.GetComponent<scr_CubeControl>().JumpAsisst(0, bounceStrength);
-            Destroy(this.gameObject);
+            this.gameObject.GetComponent<SpriteRenderer>().color = new Color(0.2f, 0.2f, 0.2f, 1);
+            this.gameObject.GetComponent<Animator>().enabled = false;
+            Invoke("Revive", deathTime);
         }
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.tag == "Player" == !triggered)
+        if (collision.gameObject.tag == "Player" && !stunned)
         {
             collision.gameObject.GetComponent<scr_CubeControl>().DamageMe(damageDealt);
             BounceDir = -collision.contacts[0].normal;
@@ -72,5 +76,12 @@ public class scr_Snake : MonoBehaviour
     private void MoveSnake()
     {
         this.gameObject.transform.position += new Vector3(speed, 0, 0);
+    }
+
+    private void Revive()
+    {
+        this.gameObject.GetComponent<SpriteRenderer>().color = new Color(1, 1, 1, 1);
+        this.gameObject.GetComponent<Animator>().enabled = true;
+        stunned = false;
     }
 }

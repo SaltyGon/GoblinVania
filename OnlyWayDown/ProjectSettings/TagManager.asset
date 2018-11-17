@@ -47,6 +47,9 @@ TagManager:
   - name: Back
     uniqueID: 2617448291
     locked: 0
+  - name: Enemy
+    uniqueID: 310639415
+    locked: 0
   - name: Player
     uniqueID: 2456396763
     locked: 0
@@ -58,7 +61,4 @@ TagManager:
     locked: 0
   - name: Top
     uniqueID: 4172954421
-    locked: 0
-  - name: Enemy
-    uniqueID: 310639415
     locked: 0
